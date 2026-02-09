@@ -16,7 +16,7 @@ def local_css(file_name):
 local_css("style.css")
 
 # 3. API INTEGRATION (Gemini 3 Pro)
-API_KEY = "AIzaSyCZNXlQFbTp6a16r8I6Hz6U2-bSBgi4v9w"
+API_KEY = "GEMINI API_KEY_PLACEHOLDER"  # Replace with your actual API key
 client = genai.Client(api_key=API_KEY)
 
 # 4. TOOL DEFINITION
@@ -95,4 +95,5 @@ if st.button("RUN FORENSIC AUDIT"):
             else:
                 report_area.warning("Audit complete. See internal thoughts for reasoning or tool calls.")
     else:
+
         st.error("Please provide both an image and a PDF manual.")
